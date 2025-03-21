@@ -19,12 +19,6 @@ public class AndroidDownloadManagerPlugin implements FlutterPlugin, ActivityAwar
     private Activity activity;
     private EventChannel eventChannel;
 
-    @Deprecated
-    public static void registerWith(PluginRegistry.Registrar registrar) {
-        AndroidDownloadManagerPlugin plugin = new AndroidDownloadManagerPlugin();
-        plugin.setupChannels(registrar.messenger(), registrar.context(), registrar.activity());
-    }
-
     private void setupChannels(BinaryMessenger messenger, Context context, Activity activity) {
         methodChannel = new MethodChannel(messenger, "download_manager");
         eventChannel = new EventChannel(messenger, "download_manager/complete");

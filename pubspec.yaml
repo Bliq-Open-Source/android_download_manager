@@ -1,6 +1,6 @@
 name: android_download_manager
 description: This package lets you download files via Android Native Download Manager.
-version: 1.0.3
+version: 1.0.3+1
 repository: https://github.com/TamilKannanCV-personal/android_download_manager.git
 
 environment:
